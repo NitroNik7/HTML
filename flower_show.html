@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/flower_shop.css">
+    <title>The flowers of Spring</title>
+    <script>
+        function disp(){
+            let val = document.getElementById("search").value;
+            console.log("TEST: " +val);
+            if (val == "Roses"){
+                document.getElementById("Roses").style.animation = "bounce 4s 2";
+            }
+            else if (val == "Lilies"){
+                document.getElementById("Lilies").style.animation = "bounce 4s 2";
+            }
+            else if (val == "Sunflowers"){
+                document.getElementById("Sunflowers").style.animation = "bounce 4s 2";
+            }else if (val == "Daisies"){
+                document.getElementById("Daisies").style.animation = "bounce 4s 2";
+            }
+            else if (val == "Lavenders"){
+                document.getElementById("Lavenders").style.animation = "bounce 4s 2";
+            }
+            else {
+                document.getElementById("Lotus").style.animation = "bounce 4s 2";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <style>
+     
+        /* .One:hover{
+            animation-name: bounce;
+            animation-iteration-count:infinite;
+            transform-origin: bottom;
+            animation-duration: 2s;
+        } */
+    </style>
+    <div class="First">
+        <div class="Logo">
+            <p>🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺</p>
+        <h1 style="text-align: left;">&emsp;The flowers of Spring</h1>
+        <form >
+            <input id="search" type="search" placeholder="&ensp;Search for flowers here...">
+            <button onclick="disp()">Search</button>
+        </form>
+    </div>
+    <br>
+    <div class="photos">
+        <div id="Roses" class="One" style="width: 400px; height: 350px; ">
+            <!-- <span style=" bottom: 100px; " id="roses_card"> 
+                Red Roses
+               <h3>Rs. 499</h3> 
+            </span> -->
+        </div>
+        <div id="Lilies"  class="Two" style="width: 400px; height: 350px; "></div>
+        <div id="Sunflowers" class="Three" style="width: 400px; height: 350px; "></div>
+        <!-- <div hidden id="Roses_card" class="Roses_card" style="width: 400px; height: 350px; ">
+        </div>
+        <div hidden id="Lilies_card" class="Lilies_card" style="width: 400px; height: 350px; ">
+        </div>
+        <div hidden id="Sunflowers_card" class="Sunflowers_card" style="width: 400px; height: 350px; ">
+        </div> -->
+    </div>
+    <div class="photos">
+        <div id="Daisies" class="Four" style="width: 400px; height: 350px; border: 5px white solid "></div>
+        <div id="Lavenders" class="Five" style="width: 400px; height: 350px; "></div>
+        <div id="Lotus" class="Six" style="width: 400px; height: 350px; "></div>
+        <!-- <div hidden id="Daisies_card" class="Daisies_card" style="width: 400px; height: 350px; ">
+        </div>
+        <div hidden id="Lavenders_card" class="Lavenders_card" style="width: 400px; height: 350px; ">
+        </div>
+        <div hidden id="Lotus_card" class="Lotus_card" style="width: 400px; height: 350px; "> -->
+        </div>
+    </div>
+    <div class="Logo">
+        <p>🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺🌼🌺</p>
+    </div>
+</body>
+</html>

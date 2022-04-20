@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Registration form</title>
+    <link rel="stylesheet" href="/css/company_form.css">
+</head>
+<body>
+    <div class="Left">
+        <h1 style="font-size:large;">Company Registration form</h1>
+            <hr> 
+            <!-- The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic).
+                The <hr> element is most often displayed as a horizontal rule that is used to 
+                separate content (or define a change) in an HTML page. -->
+            <form>
+                <b>Business name:<b style="color: red;font-size: 20px;">*</b></b>
+                <input type="text" required>
+                <br><br>
+                <b>Phone:<b style="color: red;font-size: 20px;">*</b></b>
+                <br>
+                <input type="tel" id="area code" name="Area code" size="3" required>
+                <b>-</b>
+                <input type="tel" id="phone number"name="phone number" size="10" required>
+                <br>
+                <label for="area code" style="font-size: xx-small;">Area Code</label>
+                <label for="phone number" style="font-size: xx-small;">&emsp;&emsp;&emsp;Phone Number</label>
+                <br><br>
+                <b>A.B.N.:<b style="color: red;font-size: 20px;">*</b></b>
+                <input type="text" required>
+                <br><br>
+                <b>E-mail<b style="color: red;font-size: 20px;">*</b></b>
+                <input type="email" required>
+                <br><br>
+                <b>Website<b style="color: red;font-size: 20px;">*</b></b>
+                <input type="url" required>
+                <br><br>
+                <b>Shipping Address:</b><br><br>
+                <input type="text" id="Street address" name="street address" size="40" required>
+                <br>
+                <label for="Street address" style="font-size: xx-small; vertical-align: text-top;">Street Address</label>
+                <br>
+                <input type="text" id="Street address line 2" name="street address 2" size="40" required>
+                <br>
+                <label for="Street address" style="font-size: xx-small; vertical-align: text-top;">Street Address Line 2</label>
+                <br>
+                <input type="text" id="City" name="City" size="20" required>
+                <input type="text" id="State" name="State" size="20" required>
+                <br>
+                <label for="City" style="font-size: xx-small; vertical-align: text-top;">City</label>
+                <label for="State" style="font-size: xx-small; vertical-align: text-top;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;State/Province</label>
+                <br>
+                <input type="number" id="zip_code" name="zip_code" size="20" required>
+                <label for="country"></label>
+                <select id="country" name="country">
+                    <option value="Please select">Please select&emsp;&emsp;&emsp;&emsp;&emsp;</option>
+                    <option value="India">India</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="America">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="China">China</option>
+                </select>
+                <br>
+                <label for="City" style="font-size: xx-small; vertical-align: top;">Postal/Zip Code</label>
+                <label for="country" style="font-size: xx-small; vertical-align: top;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Country</label>
+                <br>
+                <b>Trading since&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Type of Business<b style="color: red;font-size: 20px;">*</b></b>
+                <br>
+                <!--<select id="month" name="month">
+                    <option value="Jan">January</option>
+                    <option value="Feb">February</option>
+                    <option value="Mar">March</option>
+                    <option value="Apr">April</option>
+                    <option value="May">May</option>
+                    <option value="Jun">June</option>
+                    <option value="Jul">July</option>
+                    <option value="Aug">August</option>
+                    <option value="Sep">September</option>
+                    <option value="Oct">October</option>
+                    <option value="Nov">November</option>
+                    <option value="Dec">December</option> 
+                </select>
+                <select id="day" name="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option> 
+                    <option value="1">13</option>
+                    <option value="2">14</option>
+                    <option value="3">15</option>
+                    <option value="4">16</option>
+                    <option value="5">17</option>
+                    <option value="6">18</option>
+                    <option value="7">19</option>
+                    <option value="8">20</option>
+                    <option value="9">21</option>
+                    <option value="10">22</option>
+                    <option value="11">23</option>
+                    <option value="12">24</option>
+                    <option value="10">25</option>
+                    <option value="11">26</option>
+                    <option value="12">27</option> 
+                    <option value="1">28</option>
+                    <option value="2">29</option>
+                    <option value="3">30</option>
+                    <option value="4">31</option>
+                </select> -->
+                <input type="date" id="date"> 
+                <b>&emsp;&emsp;&emsp;&emsp;</b>
+                <input type="checkbox" id="Internet" style="vertical-align: bottom;">
+                <label for="Internet" style="vertical-align: bottom;">Internet</label>
+                <br>
+                <b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;</b>
+                <input type="checkbox" id="B&M" style="vertical-align: bottom;">
+                <label for="B&M" style="font-size: medium; vertical-align: bottom;">Bricks and Mortar</label>
+                <br>
+                <b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;</b>
+                <input type="checkbox" id="Wholesale" style="vertical-align: bottom;">
+                <label for="Wholesale" style="vertical-align: bottom;">Wholesale</label>
+    
+            </form>
+    </div>
+    <div class="Right">
+        <b>Preferred Payment</b>
+        <br>
+        <input type="checkbox" id="Paypal">
+        <label for="Paypal">Paypal</label>
+        <br>
+        <input type="checkbox" id="Bank transfer">
+        <label for="Bank transfer">Bank transfer</label>
+        <br>
+        <input type="checkbox" id="Money order">
+        <label for="Money order">Money order</label>
+        <br>
+        <input type="checkbox" id="Cheque">
+        <label for="Cheque">Cheque</label>
+        <br>
+        <input type="checkbox" id="Rupay/Visa/Mastercard">
+        <label for="Rupay/Visa/Mastercard">Rupay/Visa/Mastercard</label>
+        <br>
+        <hr>
+        <h2>Business Representative Information</h2>
+        <hr><br>
+        <b>Full name<b style="color: red;font-size: 20px;">*</b></b>
+        <input type="text" size="15">
+        <input type="text" size="15">
+        <br><br><br>
+        <b>Address</b>
+        <br><b>&nbsp;&nbsp;&emsp;&emsp;&emsp;</b>
+        <input type="text" size="30" id="BA_StreetAddress">
+        <br>
+        <label for="BA_StreetAddress" style="font-size: xx-small; vertical-align: text-top;">&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Street Address</label>
+        <br><b>&nbsp;&nbsp;&emsp;&emsp;&emsp;</b>
+        <input type="text" size="30" id="BA_StreetAddress2">
+        <br>
+        <label for="BA_StreetAddress2" style="font-size: xx-small; vertical-align: text-top;">&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Street Address Line 2</label>
+        <br><b>&nbsp;&nbsp;&emsp;&emsp;&emsp;</b>
+        <input type="text" id="BACity" name="BACity" size="20" required>
+        <input type="text" id="BAState" name="BAState" size="20" required>
+        <br>
+        <label for="BACity" style="font-size: xx-small; vertical-align: text-top;">&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;City</label>
+        <label for="BAState" style="font-size: xx-small; vertical-align: text-top;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;State/Province</label>
+        <br><b>&nbsp;&nbsp;&emsp;&emsp;&emsp;</b>
+        <input type="text" id="BAZip" name="BAZip" size="20" required>
+        <input type="text" id="BACountry" name="BACountry" size="20" required>
+        <br>
+        <label for="BAZip" style="font-size: xx-small; vertical-align: text-top;">&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Postal / Zip Code</label>
+        <label for="BACountry" style="font-size: xx-small; vertical-align: text-top;">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Country</label>
+        <br><br>
+        <b>Phone:<b style="color: red;font-size: 20px;">*</b></b>
+        <input type="tel" id="BA area code" name="BA Area code" size="3" required>
+        <b>-</b>
+        <input type="tel" id="BA phone number"name="BA phone number" size="10" required>
+        <br>
+        <label for="BA area code" style="font-size: xx-small; vertical-align: text-top;">&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;Area Code</label>
+        <label for="BA phone number" style="font-size: xx-small; vertical-align: text-top;">&emsp;&emsp;&emsp;Phone Number</label>
+        <br><br>
+        <b>Message</b>
+        <input type="text" name="Message" id="Message" size="font-size:16pt">
+        <br><br>
+        <input type="submit" id="submit">
+    </div>
+</body>
+</html>
