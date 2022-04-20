@@ -1,0 +1,33 @@
+body{
+    /* background-color: rosybrown; */
+    background-image: url("/IMAGES/q.jpg") ;
+
+}
+h1, h2{
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+p{
+    background-color: seagreen;
+    font-style: italic;
+}
+
+p#short{ 
+    background-color: #7DC95E;
+    text-align: left;
+}
+p#long{
+    background-color: #B8E1FF;
+    text-align: justify;
+}
+.First{
+    /* border: black;
+    border-width: 2px;
+    border-style: double; */
+    border: blue 2px dotted;
+}
+.Second p {
+    border: black 3px dotted;
+}
+

@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 10px;
+}
+section{
+    width: 50%;
+    float: left;
+    height: 400px;
+}
+.Left{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: 20px; 
+    border: 1px solid black;
+    width: 50%;
+}
+.Right{
+    margin: 10px; 
+    border: 1px solid red; 
+}
